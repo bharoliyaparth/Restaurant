@@ -1,0 +1,285 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #413e3e;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f4b400;
+}
+
+/* Home Section */
+.home {
+    background-color: #e9e9e9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.home h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.home p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.home-image {
+    width: 95%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Menu Section */
+.menu {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.menu-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.menu-item p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.3em;
+    color: #f4b400;
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    background-color: #fafafa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #f4b400;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #f0a200;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+
+/* Mobile-first Approach: Mobile Screens */
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 15px 0;
+    }
+
+    header .logo h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Home Section */
+    .home h2 {
+        font-size: 2em;
+    }
+
+    .home p {
+        font-size: 1.1em;
+    }
+
+    .home-image {
+        width: 90%; /* Adjust the width of the image */
+        max-height: 250px;
+    }
+
+    /* Menu Section */
+    .menu-items {
+        display: flex;
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center;
+        justify-content: center; /* Center horizontally */
+        height: 100vh; /* Fill the screen height */
+    }
+
+    .menu-item {
+        width: 80%; /* Reduce width for mobile */
+        margin: 15px 0;
+    }
+
+    .menu-img {
+        height: 150px; /* Smaller image size for mobile */
+    }
+
+    /* Contact Section */
+    .contact input, .contact textarea {
+        width: 90%; /* Adjust form input width for smaller screens */
+    }
+
+    .contact button {
+        width: 100%; /* Make the button full-width */
+    }
+}
+
+/* Tablet Screens (Landscape) */
+@media (max-width: 1024px) {
+
+    .home h2 {
+        font-size: 2.2em;
+    }
+
+    .menu-items {
+        flex-direction: row; /* Use row layout for medium screens */
+        justify-content: space-between;
+    }
+
+    .menu-item {
+        width: 45%; /* Reduce width of each item */
+    }
+
+    .home-image {
+        width: 70%; /* Adjust image size for tablet */
+    }
+}
